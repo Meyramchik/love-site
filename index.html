@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff6f8" />
+    <meta name="description" content="Один очень важный вопрос" />
+    <title>Один важный вопрос 💌</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <main class="page-shell">
+      <section class="love-card" id="loveCard" aria-labelledby="question">
+        <div class="stamp" aria-hidden="true">
+          <span>для тебя</span>
+          <span class="stamp-heart">♥</span>
+        </div>
+
+        <p class="eyebrow">МАЛЕНЬКОЕ ПРИЗНАНИЕ</p>
+        <div class="hero-heart" aria-hidden="true">
+          <span>♥</span>
+        </div>
+        <h1 id="question">Ты меня любишь?</h1>
+        <p class="subtitle">Отвечай сердцем — оно всегда знает правильный ответ.</p>
+
+        <div class="button-stage" id="buttonStage">
+          <button class="answer answer-yes" id="yesButton" type="button">
+            <span>ДА</span>
+            <span aria-hidden="true">♥</span>
+          </button>
+          <button
+            class="answer answer-no"
+            id="noButton"
+            type="button"
+            tabindex="-1"
+            aria-disabled="true"
+          >
+            НЕТ
+          </button>
+        </div>
+
+        <p class="secret-note">P.S. У этого вопроса только один правильный ответ</p>
+      </section>
+    </main>
+
+    <div class="celebration" id="celebration" aria-hidden="true">
+      <canvas id="heartCanvas"></canvas>
+      <div class="message-card" role="dialog" aria-modal="true" aria-labelledby="loveMessage">
+        <div class="message-heart" aria-hidden="true">♥</div>
+        <p class="message-kicker">Я так и знал</p>
+        <h2 id="loveMessage">Я тоже тебя люблю,<br /><em>солнышко!</em></h2>
+        <p>Ты — моё самое тёплое «да».</p>
+        <div class="signature" aria-hidden="true">навсегда&nbsp;&nbsp;♥</div>
+        <button class="replay" id="replayButton" type="button">Ещё сердечек</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
